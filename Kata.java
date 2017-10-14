@@ -7,6 +7,8 @@ class Kata
 	
 	public static char findMissingLetter(char[] array){
 		/*
+		WITHOUT USING CHAR VALUES
+		
 		char[] alphabet = {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
 		char firstLetter = array[0];
 
@@ -52,6 +54,7 @@ class Kata
 		return missingChar;
 		*/
 		
+		/*USING CHAR VALUES*/
 		for (int i = 0; i < array.length - 1; i++){
 			if (array[i]+2 == array[i+1])
 				return (char) (array[i] + 1);
